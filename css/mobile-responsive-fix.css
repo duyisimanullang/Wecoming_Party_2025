@@ -1,0 +1,71 @@
+/* =========================
+   FIX: Mobile Responsive Styles - Prevent Overlap
+   ========================= */
+
+/* Critical fix for overlap issues on mobile */
+@media (max-width: 768px) {
+    /* Ensure proper spacing between event details and images */
+    .upcoming-event {
+        padding: 40px 0;
+    }
+    
+    .upcoming-event .event-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px !important; /* Force gap to prevent overlap */
+    }
+    
+    /* Event details - ensure proper spacing */
+    .upcoming-event .event-details-container {
+        margin-bottom: 30px !important;
+        height: auto !important;
+        max-width: 100%;
+        padding: 25px 20px;
+    }
+    
+    /* Event images - ensure proper positioning */
+    .upcoming-event .event-images {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        height: 250px;
+        position: relative;
+        clear: both;
+    }
+    
+    /* Ensure testimonials section has proper spacing */
+    .testimonials {
+        margin-top: 50px !important;
+        padding: 40px 0;
+    }
+    
+    /* Ensure community cards have proper spacing */
+    .community-cards {
+        margin-top: 50px !important;
+        padding: 60px 0;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .upcoming-event .event-details-container {
+        margin: 0 10px 25px 10px !important;
+    }
+    
+    .upcoming-event .event-images {
+        margin: 0 10px !important;
+    }
+}
+
+/* Ensure proper document flow */
+@media (max-width: 768px) {
+    .upcoming-event .container {
+        display: block;
+    }
+    
+    /* Clear any potential floats */
+    .upcoming-event::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

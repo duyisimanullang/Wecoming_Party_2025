@@ -1,0 +1,225 @@
+/* CONTACT SECTION STYLES */
+
+.contact2 {
+    padding-top: 40px ;
+    background-color: #F3ECE4; 
+    font-family: 'Segoe UI', sans-serif;
+    color: #3e2c23; /* Coklat tua */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5e3c2c; /* Coklat */
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #a97458; /* Coklat muda */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    animation: fadeInUp 1s ease;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f6e7d7; /* Warna cream terang */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(100, 70, 50, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-4px);
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 12px;
+    font-size: 1rem;
+    border: 2px solid #a97458;
+    border-radius: 8px;
+    background-color: #fffaf5;
+    color: #3e2c23;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #7d4e3c;
+}
+
+.form-group label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 0.9rem;
+    color: #5e3c2c;
+    background-color: transparent;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.8rem;
+    background-color: #f6e7d7;
+    padding: 0 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+.btn {
+    background-color: #5e3c2c;
+    color: #fffaf0;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn:hover {
+    background-color: #402a1f;
+    transform: scale(1.05);
+}
+
+.loading {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fffaf0;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.form-message {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #5e3c2c;
+}
+
+.popup-notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: #9D9167;
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    min-width: 50px;
+    max-height: 100px;
+    max-width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    animation: slideInCenter 0.3s ease-out;
+}
+
+
+
+/* Animations */
+@keyframes slideInCenter {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .contact-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .contact-form {
+        flex: 1;
+    }
+
+    #popupNotification {
+        right: 30px;
+        bottom: 30px;
+    }
+}

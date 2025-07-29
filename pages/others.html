@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMS - Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-left">
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="event-detail.html">Our Events</a>
+                    <a href="community.html">Our Community</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <img src="../assets/logos/logo1.png" alt="Logo 1" class="nav-logo-img">
+                <img src="../assets/logos/logo2.png" alt="Logo 2" class="nav-logo-img">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero others-hero">
+        <div class="container">
+
+        </div>
+    </section>
+
+
+
+    <!-- Description -->
+    <section class="program">
+        <div class="container">
+            <h2 class="section-title">Fellowship and Special Events</h2>
+            <p>Bukan cuma komunitas biasa—ini cara kita grow bareng dan saling mengenal satu sama lain ! Di sini, kita membuat hal-hal kecil pun jadi berkesan. Yuk intip keseruannya!</p>
+          
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-slider">
+                <div class="gallery-item active"><img src="../assets/fellow/1.jpg" alt="Foto 1"></div>
+                <div class="gallery-item"><img src="../assets/fellow/2.jpg" alt="Foto 2"></div>
+                <div class="gallery-item"><img src="../assets/fellow/3.jpg" alt="Foto 3"></div>
+                <div class="gallery-item"><img src="../assets/fellow/4.jpg" alt ="Foto 4"></div>
+                <div class="gallery-item"><img src="../assets/fellow/5.jpg" alt="Foto 5"></div>
+                <div class="gallery-item"><img src="../assets/fellow/6.jpg" alt="Foto 6"></div>
+                <div class="gallery-item"><img src="../assets/fellow/7.jpg" alt="Foto 7"></div>
+                <div class="gallery-item"><img src="../assets/fellow/8.jpg" alt="Foto 8"></div>
+                <div class="gallery-item"><img src="../assets/fellow/9.jpg" alt="Foto 9"></div>
+                <div class="gallery-item"><img src="../assets/fellow/10.jpg" alt="Foto 10"></div>
+                <div class="gallery-item"><img src="../assets/fellow/11.jpg" alt="Foto 11"></div>
+
+                
+                <div class="slider-controls">
+                    <button class="prev">←</button>
+                    <button class="next">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Contact -->
+    <section class="contact2">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="container">
+    <div class="contact-container">
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xldljqzd" method="POST">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder=" " required>
+                <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder=" " required>
+                <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder=" " required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <div class="form-submit">
+                <button type="submit" class="btn" id="submitBtn">
+                    <span id="btnText">Send Message</span>
+                    <span id="btnLoading" class="loading" style="display:none"></span>
+                </button>
+            </div>
+            <div class="form-message" id="formMessage"></div>
+        </form>
+        <div id="popupNotification" class="popup-notification" style="display:none;"></div>
+    </div>
+    </div>
+    </section>
+
+
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Army Of God || Contact person at 082151947245</p>
+        </div>
+    </footer>
+
+    <!-- JS File -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
