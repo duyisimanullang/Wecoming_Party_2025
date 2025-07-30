@@ -1,0 +1,142 @@
+/* Override CSS for Index Page Font Sizes - High Specificity */
+
+/* 1. Make Upcoming Event and Welcoming You Home titles the same size */
+/* Desktop - Both headings 50px */
+body .upcoming-event .section-title,
+.upcoming-event .section-title,
+body .community-cards .section-title,
+.community-cards .section-title {
+    font-size: 50px !important;
+}
+
+/* Mobile devices - Both headings 25px */
+@media (max-width: 768px) {
+    body .upcoming-event .section-title,
+    .upcoming-event .section-title,
+    body .community-cards .section-title,
+    .community-cards .section-title {
+        font-size: 25px !important;
+    }
+}
+
+/* Extra small devices - Both headings 22px */
+@media (max-width: 576px) {
+    body .upcoming-event .section-title,
+    .upcoming-event .section-title,
+    body .community-cards .section-title,
+    .community-cards .section-title {
+        font-size: 22px !important;
+    }
+}
+
+/* Override the specific rule in style.css that was forcing Upcoming Event heading to 25px */
+body .upcoming-event h2,
+.upcoming-event h2 {
+    font-size: inherit !important;
+}
+
+/* 2. The Journey Of You(th) title and description - High specificity */
+body .upcoming-event .event-details h3,
+.upcoming-event .event-details h3 {
+    font-size: 25px !important;
+    font-weight: bold !important;
+    line-height: 1.2 !important;
+}
+
+body .upcoming-event .event-details p,
+.upcoming-event .event-details p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+}
+
+/* 3. CG names and descriptions - High specificity */
+body .community-cards .cards-container .community-card h3,
+.community-cards .cards-container .community-card h3,
+body .community-card h3,
+.community-card h3 {
+    font-size: 25px !important;
+    font-weight: bold !important;
+    line-height: 1.2 !important;
+}
+
+body .community-cards .cards-container .community-card p,
+.community-cards .cards-container .community-card p,
+body .community-card p,
+.community-card p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+}
+
+/* Mobile devices - High specificity overrides */
+@media (max-width: 768px) {
+    body .upcoming-event .event-details h3,
+    .upcoming-event .event-details h3 {
+        font-size: 18px !important;
+    }
+    
+    body .upcoming-event .event-details p,
+    .upcoming-event .event-details p {
+        font-size: 14px !important;
+    }
+    
+    body .community-cards .cards-container .community-card h3,
+    .community-cards .cards-container .community-card h3,
+    body .community-card h3,
+    .community-card h3 {
+        font-size: 18px !important;
+    }
+    
+    body .community-cards .cards-container .community-card p,
+    .community-cards .cards-container .community-card p,
+    body .community-card p,
+    .community-card p {
+        font-size: 14px !important;
+    }
+}
+
+/* Extra small devices - High specificity overrides */
+@media (max-width: 576px) {
+    body .upcoming-event .event-details h3,
+    .upcoming-event .event-details h3 {
+        font-size: 17px !important;
+    }
+    
+    body .upcoming-event .event-details p,
+    .upcoming-event .event-details p {
+        font-size: 13px !important;
+    }
+    
+    body .community-cards .cards-container .community-card h3,
+    .community-cards .cards-container .community-card h3,
+    body .community-card h3,
+    .community-card h3 {
+        font-size: 17px !important;
+    }
+    
+    body .community-cards .cards-container .community-card p,
+    .community-cards .cards-container .community-card p,
+    body .community-card p,
+    .community-card p {
+        font-size: 13px !important;
+    }
+}
+
+/* 4. Testimonial descriptions - 16px on desktop, 12px on mobile */
+body .testimonials .testimonial p,
+.testimonials .testimonial p {
+    font-size: 16px !important;
+}
+
+@media (max-width: 768px) {
+    body .testimonials .testimonial p,
+    .testimonials .testimonial p {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    body .testimonials .testimonial p,
+    .testimonials .testimonial p {
+        font-size: 12px !important;
+    }
+}

@@ -1,0 +1,38 @@
+/* Responsive Font Sizing for Upcoming Event and Welcoming You Home Titles */
+
+/* Desktop/Laptop - 50px font size */
+.upcoming-event .section-title,
+.community-cards .section-title {
+    font-size: 50px;
+}
+
+/* Mobile devices - 50% smaller (25px) */
+@media (max-width: 768px) {
+    .upcoming-event .section-title,
+    .community-cards .section-title {
+        font-size: 25px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+    .upcoming-event .section-title,
+    .community-cards .section-title {
+        font-size: 22px;
+    }
+}
+
+/* Ensure proper spacing for mobile */
+@media (max-width: 768px) {
+    .upcoming-event .section-title,
+    .community-cards .section-title {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .upcoming-event .section-title,
+    .community-cards .section-title {
+        margin-bottom: 15px;
+    }
+}

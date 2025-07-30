@@ -1,0 +1,78 @@
+/* Responsive Font Sizing for Index Page - Increased by 30% */
+
+/* 1. The Journey Of You(th) title and description */
+.upcoming-event .event-details h3 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.upcoming-event .event-details p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 2. CG names and descriptions */
+.community-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.community-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 3. Connect Group and Army of God titles */
+.community-cards .section-title {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Mobile devices - 30% larger */
+@media (max-width: 768px) {
+    .upcoming-event .event-details h3 {
+        font-size: 32.5px; /* 25px + 30% = 32.5px */
+    }
+    
+    .upcoming-event .event-details p {
+        font-size: 20.8px; /* 16px + 30% = 20.8px */
+    }
+    
+    .community-card h3 {
+        font-size: 26px; /* 20px + 30% = 26px */
+    }
+    
+    .community-card p {
+        font-size: 20.8px; /* 16px + 30% = 20.8px */
+    }
+    
+    .community-cards .section-title {
+        font-size: 32.5px; /* 25px + 30% = 32.5px */
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+    .upcoming-event .event-details h3 {
+        font-size: 30px;
+    }
+    
+    .upcoming-event .event-details p {
+        font-size: 19px;
+    }
+    
+    .community-card h3 {
+        font-size: 24px;
+    }
+    
+    .community-card p {
+        font-size: 19px;
+    }
+    
+    .community-cards .section-title {
+        font-size: 30px;
+    }
+}

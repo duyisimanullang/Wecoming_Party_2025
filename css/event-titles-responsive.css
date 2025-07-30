@@ -1,0 +1,40 @@
+/* Responsive Font Sizing for Event Page Titles */
+
+/* Desktop/Laptop - 50px font size */
+.aogc .section-title,
+.community-cards .section-title {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Mobile devices - 50% smaller (25px) */
+@media (max-width: 768px) {
+    .aogc .section-title,
+    .community-cards .section-title {
+        font-size: 25px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+    .aogc .section-title,
+    .community-cards .section-title {
+        font-size: 22px;
+    }
+}
+
+/* Ensure proper spacing for mobile */
+@media (max-width: 768px) {
+    .aogc .section-title,
+    .community-cards .section-title {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .aogc .section-title,
+    .community-cards .section-title {
+        margin-bottom: 15px;
+    }
+}
